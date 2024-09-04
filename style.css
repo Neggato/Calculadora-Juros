@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --linear-gradient: linear-gradient(90deg, #38bbf8, #6d28f9, #4c1d95)
+    --linear-gradient: linear-gradient(90deg, #001aff, #564be6, #17caf7)
 }
 
 * {
@@ -42,11 +42,56 @@
     height: 3px;
     width: 150px;
     background: var(--linear-gradient);
-    bottom: 5px;
+    bottom: 0px;
+    
 }
 
 #input_box {
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label {
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4c1d95;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#result {
+    text-align: center;
+}
+
+#total {
+    font-size: 40px;
+}
+
+#calculate {
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
 }
